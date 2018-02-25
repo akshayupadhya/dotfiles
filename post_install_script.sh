@@ -1,23 +1,23 @@
-# ppa's
-# #vs-code
-# sudo apt install -y curl
-# curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-# sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-# sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+#ppa's
+#vs-code
+sudo apt install -y curl
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
-# #vim
-# sudo add-apt-repository -y ppa:jonathonf/vim
+#vim
+sudo add-apt-repository -y ppa:jonathonf/vim
 
-# #nodejs
-# curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+#nodejs
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
-# sudo apt-get update
+sudo apt-get update
 
 
-# #packages
-# sudo apt-get install -y git-core vlc ubuntu-make  vim nodejs zsh gdebi-core code nodejs fonts-powerline
+#packages
+sudo apt-get install -y git-core vlc ubuntu-make  vim nodejs zsh gdebi-core code nodejs fonts-powerline
 
-# #setup
+#setup
 #git
 git config --global user.email "akshaysrinagar@gmail.com"
 git config --global user.name "akshay upadhya"
