@@ -22,6 +22,9 @@ sudo apt-get install -y git-core vlc ubuntu-make  vim nodejs zsh gdebi-core code
 git config --global user.email "akshaysrinagar@gmail.com"
 git config --global user.name "akshay upadhya"
 
+#npm access
+sudo chown -R $(whoami) ~/.npm
+
 
 sudo apt-get -y upgrade
 
