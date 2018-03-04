@@ -15,7 +15,8 @@ sudo apt-get update
 
 
 #packages
-sudo apt-get install -y git-core vlc ubuntu-make  vim nodejs zsh gdebi-core code nodejs fonts-powerline
+sudo apt-get install -y git-core vlc  vim nodejs zsh gdebi-core code nodejs fonts-powerline tmux gnome-tweak-tool
+
 
 #setup
 #git
