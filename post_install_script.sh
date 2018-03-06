@@ -38,15 +38,24 @@ cd /tmp
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi google-chrome-stable_current_amd64.deb 
 
+
 #ohmyzsh
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
+sed -i.tmp 's:env zsh::g' install.sh
+sed -i.tmp 's:chsh -s .*$::g' install.sh
+sh install.sh
 chsh -s $(which zsh)
+
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 #postman
 wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
 sudo tar -xzf postman.tar.gz -C /opt
 rm postman.tar.gz
 sudo ln -s /opt/Postman/Postman /usr/bin/postman
+
+echo "source ~/dotfiles/.zshrc" >>.zshrc
+echo ":so ~/dotfiles/.vimrc" >>.vimrc
 
 cat > ~/.local/share/applications/postman.desktop <<EOL
 [Desktop Entry]
