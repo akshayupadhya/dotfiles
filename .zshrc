@@ -2,7 +2,7 @@ export TERM="xterm-256color"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH_CACHE_DIR=$HOME/.zsh
+#export ZSH_CACHE_DIR=$HOME/.zsh
 # Path to your oh-my-zsh installation.
   export ZSH=/home/akshay/.oh-my-zsh
 
@@ -94,3 +94,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+##powerline 9k config
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+#POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
