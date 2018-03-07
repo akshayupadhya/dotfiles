@@ -27,7 +27,10 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 "vim-airline
 Plugin 'vim-airline/vim-airline'
-
+"nerdTree
+Plugin 'scrooloose/nerdtree'
+"to show hidden files in nerdtree
+let NERDTreeShowHidden=1
 
 " Install L9 and avoid a Naming conflict if you've already installed a
 " different version somewhere else.
