@@ -17,6 +17,11 @@ sudo apt-get update
 #packages
 sudo apt-get install -y git-core vlc  vim nodejs zsh gdebi-core code nodejs fonts-powerline tmux gnome-tweak-tool
 
+#vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+
+
 
 #setup
 #git
@@ -56,6 +61,9 @@ sudo ln -s /opt/Postman/Postman /usr/bin/postman
 
 echo "source ~/dotfiles/.zshrc" >>.zshrc
 echo ":so ~/dotfiles/.vimrc" >>.vimrc
+
+#install vim plugins
+vim +PluginInstall +qall
 
 cat > ~/.local/share/applications/postman.desktop <<EOL
 [Desktop Entry]
