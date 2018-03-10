@@ -3,73 +3,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+:so vim/plugins.vim
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-"vim-airline
-Plugin 'vim-airline/vim-airline'
-"nerdTree
-Plugin 'scrooloose/nerdtree'
-"to show hidden files in nerdtree
-let NERDTreeShowHidden=1
-"to keep NERDTree open by default
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
-"js plugins
-Plugin 'pangloss/vim-javascript'
-
-"autocomplete
-Plugin 'Valloric/YouCompleteMe'
-" Start autocompletion after 4 chars
-"let g:ycm_min_num_of_chars_for_completion = 4
-"let g:ycm_min_num_identifier_candidate_chars = 4
-"let g:ycm_enable_diagnostic_highlighting = 0
-" Don't show YCM's preview window [ I find it really annoying ]
-"set completeopt-=preview
-let g:ycm_add_preview_to_completeopt = 0
-
-"pug syntax
-Plugin 'digitaltoad/vim-pug'
-
-
-"fuzzy file search
-Plugin 'kien/ctrlp.vim'
-
-"commentor
-Plugin 'scrooloose/nerdcommenter'
-
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-"themes
-Plugin 'flazz/vim-colorschemes'
-Plugin 'jacoborus/tender.vim'
-
-Plugin 'thaerkh/vim-indentguides'
-let g:indentguides_tabchar = '|'
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
 "indetation guildelines
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -84,32 +20,3 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-"enable syntax highlighting
-syntax enable
-
-"set line number
-set number
-
-"set relative line numbers
-set relativenumber
-
-"set tabs to 2 spaces
-set ts=2
-
-"indent when moving to the next line
-set autoindent
-
-"set theme
-colorscheme onedark	
-" set lighline theme inside lightline config
-let g:lightline = { 'colorscheme': 'tender' }
-
-filetype plugin on
-
-"indentation guidelines
-":set listchars=tab:\|\ 
-set nolist
-
-if $COLORTERM == 'gnome-terminal'
-  set t_Co=256
-endif

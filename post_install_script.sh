@@ -59,11 +59,21 @@ sudo tar -xzf postman.tar.gz -C /opt
 rm postman.tar.gz
 sudo ln -s /opt/Postman/Postman /usr/bin/postman
 
-echo "source ~/dotfiles/.zshrc" >>.zshrc
-echo ":so ~/dotfiles/.vimrc" >>.vimrc
+# to remove existing vimrc and zshrc
+echo 'removing existing vimrc and zshrc'
+rm -f ~/.vimrc
+rm -f ~/.zshrc
+echo 'adding new  vimrc and zshrc'
+echo "source ~/dotfiles/.zshrc" >>~/.zshrc
+echo ":so ~/dotfiles/.vimrc" >>~/.vimrc
 
 #install vim plugins
+echo 'installing vim plugins'
 vim +PluginInstall +qall
+
+echo 'adding pluginconfig and vimconfig to .vimrc'
+echo ":so ~/dotfiles/vim/PluginConfig.vim" >>.vimrc
+echo ":so ~/dotfiles/vim/vimconfig.vim" >>.vimrc
 
 cat > ~/.local/share/applications/postman.desktop <<EOL
 [Desktop Entry]
