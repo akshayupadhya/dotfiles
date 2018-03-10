@@ -14,7 +14,7 @@ set ts=2
 set autoindent
 
 "set theme
-colorscheme onedark	
+  colorscheme onedark	
 " set lighline theme inside lightline config
 let g:lightline = { 'colorscheme': 'tender' }
 

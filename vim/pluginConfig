@@ -1,9 +1,11 @@
 "to show hidden files in nerdtree
 let NERDTreeShowHidden=1
 "to keep NERDTree open by default
-autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
+"autocmd vimenter * NERDTree
+"autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
+"keybinding to toggle neerdtree
+map <silent> <C-n> :NERDTreeToggle<CR>
 
 " Start autocompletion after 4 chars
 "let g:ycm_min_num_of_chars_for_completion = 4
