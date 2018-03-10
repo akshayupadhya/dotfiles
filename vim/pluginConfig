@@ -6,6 +6,22 @@ let NERDTreeShowHidden=1
 "autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
 "keybinding to toggle neerdtree
 map <silent> <C-n> :NERDTreeToggle<CR>
+"nerdtree git symbols
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+
+"git gutter
+Plugin 'airblade/vim-gitgutter'
 
 " Start autocompletion after 4 chars
 "let g:ycm_min_num_of_chars_for_completion = 4

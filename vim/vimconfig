@@ -16,7 +16,7 @@ set autoindent
 "set theme
   colorscheme onedark	
 " set lighline theme inside lightline config
-let g:lightline = { 'colorscheme': 'tender' }
+"let g:lightline = { 'colorscheme': 'tender' }
 
 filetype plugin on
 
