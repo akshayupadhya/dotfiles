@@ -8,6 +8,9 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 #vim
 sudo add-apt-repository -y ppa:jonathonf/vim
 
+#rvm ruby
+sudo apt-add-repository -y ppa:rael-gc/rvm
+
 #nodejs
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 
@@ -15,7 +18,7 @@ sudo apt-get update
 
 
 #packages
-sudo apt-get install -y git-core vlc  vim nodejs zsh gdebi-core code nodejs fonts-powerline tmux gnome-tweak-tool cmake python-dev python3-dev build-essential
+sudo apt-get install -y git-core vlc  vim nodejs zsh gdebi-core code nodejs fonts-powerline tmux gnome-tweak-tool cmake python-dev python3-dev build-essential rvm postgresql postgresql-contrib
 
 
 

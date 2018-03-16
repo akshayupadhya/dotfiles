@@ -30,12 +30,22 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'pangloss/vim-javascript'
 
 "autocomplete
+Plugin 'ternjs/tern_for_vim', { 'for': 'javascript' }
 Plugin 'Valloric/YouCompleteMe'
 
+"autoclose tag
+Plugin 'jiangmiao/auto-pairs'
+"emmet
+Plugin 'mattn/emmet-vim'
 
+"rainbow parenthesis
+"Plugin 'luochen1990/rainbow'
+Plugin 'kien/rainbow_parentheses.vim'
 "pug syntax
 Plugin 'digitaltoad/vim-pug'
 
+"coffeescript support
+Plugin 'kchmck/vim-coffee-script'
 
 "fuzzy file search
 Plugin 'kien/ctrlp.vim'
@@ -45,6 +55,8 @@ Plugin 'scrooloose/nerdcommenter'
 
 "themes
 Plugin 'flazz/vim-colorschemes'
+"solarized
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'jacoborus/tender.vim'
 
 Plugin 'thaerkh/vim-indentguides'

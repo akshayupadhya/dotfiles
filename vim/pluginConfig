@@ -5,7 +5,8 @@ let NERDTreeShowHidden=1
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists(“s:std_in”) | NERDTree | endif
 "keybinding to toggle neerdtree
-map <silent> <C-n> :NERDTreeToggle<CR>
+map <silent> <C-\> :NERDTreeToggle<CR>
+map <silent> <C-S-\> :NERDTreeToggle<CR>
 "nerdtree git symbols
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -23,6 +24,9 @@ let g:NERDTreeIndicatorMapCustom = {
 "git gutter
 Plugin 'airblade/vim-gitgutter'
 
+"autoclose tag-flymode
+let g:AutoPairsFlyMode = 0
+
 " Start autocompletion after 4 chars
 "let g:ycm_min_num_of_chars_for_completion = 4
 "let g:ycm_min_num_identifier_candidate_chars = 4
@@ -37,3 +41,43 @@ let g:ycm_add_preview_to_completeopt = 0
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 let g:indentguides_tabchar = '|'
+
+"theme config
+let g:solarized_termcolors=256
+
+"set macligatures
+set guifont=Fira\ Code:h12
+
+"to igonre node_modules and .git in ctrl-p
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+"rainbow
+"let g:rainbow_active = 1
+
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+		let g:rbpt_max = 16
+
+	let g:rbpt_loadcmd_toggle = 0
+
+	au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces	

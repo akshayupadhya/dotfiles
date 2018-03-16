@@ -12,9 +12,17 @@ set ts=2
 
 "indent when moving to the next line
 set autoindent
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 "set theme
-  colorscheme onedark	
+"  colorscheme onedark	
+"syntax enable
+set background=dark
+colorscheme solarized
 " set lighline theme inside lightline config
 "let g:lightline = { 'colorscheme': 'tender' }
 
@@ -27,3 +35,4 @@ set nolist
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
+set noswapfile
