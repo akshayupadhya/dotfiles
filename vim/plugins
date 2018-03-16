@@ -38,6 +38,8 @@ Plugin 'jiangmiao/auto-pairs'
 "emmet
 Plugin 'mattn/emmet-vim'
 
+"surrond
+Plugin 'tpope/vim-surround'
 "rainbow parenthesis
 "Plugin 'luochen1990/rainbow'
 Plugin 'kien/rainbow_parentheses.vim'
