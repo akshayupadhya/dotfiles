@@ -23,6 +23,9 @@ sudo apt-get install -y git-core vlc  vim nodejs zsh gdebi-core code nodejs font
 #heoroku
 wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
+#nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+
 #ohmyzsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
 sed -i.tmp 's:env zsh::g' install.sh

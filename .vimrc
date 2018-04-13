@@ -4,7 +4,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 
-:so ~/dotfiles/vim/plugins
+:so ~/dotfiles/vim/plugins.vim
 
 "indetation guildelines
 " To ignore plugin indent changes, instead use:
@@ -20,5 +20,5 @@ filetype off                  " required
 " Put your non-Plugin stuff after this line
 
 
-:so ~/dotfiles/vim/pluginConfig
-:so ~/dotfiles/vim/vimconfig
+:so ~/dotfiles/vim/pluginConfig.vim
+:so ~/dotfiles/vim/vimconfig.vim
