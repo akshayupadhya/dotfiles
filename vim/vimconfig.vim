@@ -7,12 +7,6 @@ set number
 "set relative line numbers
 set relativenumber
 
-"set tabs to 2 spaces
-"set ts=2
-"set tabstop=2
-""set smartindent
-"set autoindent
-"filetype plugin indent on
 filetype plugin indent on
 " On pressing tab, insert 2 spaces
 set expandtab
@@ -21,6 +15,9 @@ set tabstop=2
 set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
+
+"to remove auto trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 "indent when moving to the next line
 set autoindent
