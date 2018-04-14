@@ -26,6 +26,13 @@ wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 #nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 
+#lua
+wget https://www.lua.org/ftp/lua-5.3.3.tar.gz \
+    && tar zxvf lua-5.3.3.tar.gz \
+    && cd lua-5.3.3 \
+    && make linux \
+    && sudo make install
+
 #ohmyzsh
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh
 sed -i.tmp 's:env zsh::g' install.sh

@@ -100,5 +100,8 @@ source $ZSH/oh-my-zsh.sh
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 
+#adding lua
+export LUA_PREFIX=/usr/local
+
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
 source ~/dotfiles/bash_profile
