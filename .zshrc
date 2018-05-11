@@ -104,4 +104,17 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 export LUA_PREFIX=/usr/local
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir newline vcs)
+#automaically switch node version from nvmrc
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
 source ~/dotfiles/bash_profile

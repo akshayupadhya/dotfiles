@@ -5,59 +5,59 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Bundle 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fugitive'
 "Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "vim-airline
-Plugin 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline'
 "nerdTree
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
 
 "js plugins
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 
 "autocomplete
-Plugin 'ternjs/tern_for_vim', { 'for': 'javascript' }
-Plugin 'Valloric/YouCompleteMe'
+Bundle 'ternjs/tern_for_vim', { 'for': 'javascript' }
+Bundle 'Valloric/YouCompleteMe'
 "syntastic
-Plugin 'vim-syntastic/syntastic'
+Bundle 'vim-syntastic/syntastic'
 
 "autoclose tag
-Plugin 'jiangmiao/auto-pairs'
+Bundle 'jiangmiao/auto-pairs'
 "emmet
-Plugin 'mattn/emmet-vim'
+Bundle 'mattn/emmet-vim'
 
 "surrond
-Plugin 'tpope/vim-surround'
+Bundle 'tpope/vim-surround'
 "rainbow parenthesis
-"Plugin 'luochen1990/rainbow'
-Plugin 'kien/rainbow_parentheses.vim'
+"Bundle 'luochen1990/rainbow'
+Bundle 'kien/rainbow_parentheses.vim'
 "pug syntax
-Plugin 'digitaltoad/vim-pug'
+Bundle 'digitaltoad/vim-pug'
 
 "coffeescript support
-Plugin 'kchmck/vim-coffee-script'
+Bundle 'kchmck/vim-coffee-script'
 
 "fuzzy file search
-Plugin 'kien/ctrlp.vim'
+Bundle 'kien/ctrlp.vim'
 
 "commentor
-Plugin 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdcommenter'
 
 "themes
-Plugin 'flazz/vim-colorschemes'
+Bundle 'flazz/vim-colorschemes'
 "solarized
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'jacoborus/tender.vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'jacoborus/tender.vim'
 
-Plugin 'thaerkh/vim-indentguides'
+Bundle 'thaerkh/vim-indentguides'
 
 
 " All of your Plugins must be added before the following line

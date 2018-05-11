@@ -28,17 +28,17 @@ augroup numbertoggle
 augroup END
 
 "set theme
-"  colorscheme onedark	
+"  colorscheme onedark
 "syntax enable
 set background=dark
-colorscheme onedark
+"colorscheme onedark
 " set lighline theme inside lightline config
 "let g:lightline = { 'colorscheme': 'tender' }
 
 filetype plugin on
 
 "indentation guidelines
-":set listchars=tab:\|\ 
+":set listchars=tab:\|\
 set nolist
 
 if $COLORTERM == 'gnome-terminal'
