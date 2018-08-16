@@ -5,9 +5,6 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
-#vim
-sudo add-apt-repository -y ppa:jonathonf/vim
-
 #rvm ruby
 sudo apt-add-repository -y ppa:rael-gc/rvm
 
@@ -18,7 +15,7 @@ sudo apt-get update
 
 
 #packages
-sudo apt-get install -y git-core vlc  vim nodejs zsh gdebi-core code nodejs fonts-powerline tmux gnome-tweak-tool cmake python-dev python3-dev build-essential  make gcc libc6-dev tcl
+sudo apt-get install -y git-core vlc  nodejs zsh gdebi-core code nodejs fonts-powerline tmux gnome-tweak-tool cmake python-dev python3-dev build-essential  make gcc libc6-dev tcl
 
 #heoroku
 wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
@@ -52,22 +49,11 @@ git config --global user.name "akshay upadhya"
 sudo chown -R $(whoami) ~/.npm
 
 # to remove existing vimrc and zshrc
-echo 'removing existing vimrc and zshrc'
-rm -f ~/.vimrc
+echo 'removing existing zshrc'
 rm -f ~/.zshrc
-echo 'installing vundle'
-#vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 echo 'adding new  vimrc and zshrc'
 echo "source ~/dotfiles/.zshrc" >>~/.zshrc
-echo ":so ~/dotfiles/.vimrc" >>~/.vimrc
-
-#install vim plugins
-echo 'installing vim plugins'
-vim +PluginInstall +qall
-
-echo "installing ycm"
-~/.vim/bundle/YouCompleteMe/install.py --all
 
 
 cat > ~/.local/share/applications/postman.desktop <<EOL
