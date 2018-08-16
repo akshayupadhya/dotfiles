@@ -18,7 +18,7 @@ sudo apt-get update
 
 
 #packages
-sudo apt-get install -y git-core vlc  vim nodejs zsh gdebi-core code nodejs fonts-powerline tmux gnome-tweak-tool cmake python-dev python3-dev build-essential  postgresql postgresql-contrib make gcc libc6-dev tcl
+sudo apt-get install -y git-core vlc  vim nodejs zsh gdebi-core code nodejs fonts-powerline tmux gnome-tweak-tool cmake python-dev python3-dev build-essential  make gcc libc6-dev tcl
 
 #heoroku
 wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
