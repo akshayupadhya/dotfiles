@@ -115,7 +115,6 @@ load-nvmrc() {
   fi
 }
 add-zsh-hook chpwd load-nvmrc
-load-nvmrc
 
 source ~/dotfiles/bash_profile
 #source ./bash_profile
