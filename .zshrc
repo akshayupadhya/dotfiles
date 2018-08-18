@@ -114,7 +114,9 @@ load-nvmrc() {
     nvm use default
   fi
 }
-add-zsh-hook chpwd load-nvmrc
+# add-zsh-hook chpwd load-nvmrc
 
 source ~/dotfiles/bash_profile
-#source ./bash_profile
+# source ./bash_profile
+source ./bash_profile
+source ./bash_profile

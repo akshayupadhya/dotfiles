@@ -1,3 +1,10 @@
+# remove lock file
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+
+
+
 #ppa's
 #vs-code
 sudo apt install -y curl
