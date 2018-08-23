@@ -1,4 +1,8 @@
 export TERM="xterm-256color"
+# xterm -en utf-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -118,5 +122,5 @@ load-nvmrc() {
 
 source ~/dotfiles/bash_profile
 # source ./bash_profile
-source ./bash_profile
-source ./bash_profile
+#source ./bash_profile
+#source ./bash_profile
