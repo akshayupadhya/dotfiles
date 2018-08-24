@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$NVIM_TUI_ENABLE_CURSOR_SHAPE	nvim/config.vim	/^let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1$/;"	v
+$NVIM_TUI_ENABLE_TRUE_COLOR	nvim/config.vim	/^let $NVIM_TUI_ENABLE_TRUE_COLOR=1$/;"	v
+<C-S-\>	nvim/keys/NERDTree.vim	/^map <silent> <C-S-\\> :NERDTreeToggle<CR>$/;"	m
+<C-S-\>	vim/pluginConfig.vim	/^map <silent> <C-S-\\> :NERDTreeToggle<CR>$/;"	m
+<C-\>	nvim/keys/NERDTree.vim	/^map <silent> <C-\\> :NERDTreeToggle<CR>$/;"	m
+<C-\>	vim/pluginConfig.vim	/^map <silent> <C-\\> :NERDTreeToggle<CR>$/;"	m
+<C-h>	vim/vimconfig.vim	/^map <C-h> <C-W>h$/;"	m
+<C-j>	vim/vimconfig.vim	/^map <C-j> <C-W>j$/;"	m
+<C-k>	vim/vimconfig.vim	/^map <C-k> <C-W>k$/;"	m
+<C-l>	vim/vimconfig.vim	/^map <C-l> <C-W>l$/;"	m
+<C-p>	nvim/keys/fzf.vim	/^nnoremap <C-p> :FZF<CR>$/;"	m
+<tab>	nvim/keys/deoplete.vim	/^inoremap <expr> <tab>  deoplete#mappings#manual_complete()$/;"	m
+NERDTreeShowHidden	vim/pluginConfig.vim	/^let NERDTreeShowHidden=1$/;"	v
+NERDTreeShowLineNumbers	nvim/pluginConfig/NERDTree.vim	/^let NERDTreeShowLineNumbers=1$/;"	v
+NERDTreeShowLineNumbers	vim/pluginConfig.vim	/^let NERDTreeShowLineNumbers=1$/;"	v
+g:AutoPairsFlyMode	vim/pluginConfig.vim	/^let g:AutoPairsFlyMode = 0$/;"	v
+g:NERDTreeChDirMode	nvim/pluginConfig/NERDTree.vim	/^let g:NERDTreeChDirMode=2$/;"	v
+g:NERDTreeIndicatorMapCustom	nvim/pluginConfig/NERDTree.vim	/^let g:NERDTreeIndicatorMapCustom = {$/;"	v
+g:NERDTreeIndicatorMapCustom	vim/pluginConfig.vim	/^let g:NERDTreeIndicatorMapCustom = {$/;"	v
+g:ctrlp_custom_ignore	vim/pluginConfig.vim	/^let g:ctrlp_custom_ignore = 'node_modules\\|DS_Store\\|git'$/;"	v
+g:deoplete#enable_at_startup	nvim/keys/deoplete.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:deoplete#enable_at_startup	nvim/pluginConfig/deoplete.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:deoplete#enable_camel_case	nvim/pluginConfig/deoplete.vim	/^    let g:deoplete#enable_camel_case = 1$/;"	v
+g:deoplete#enable_ignore_case	nvim/pluginConfig/deoplete.vim	/^    let g:deoplete#enable_ignore_case = 1$/;"	v
+g:deoplete#enable_refresh_always	nvim/pluginConfig/deoplete.vim	/^    let g:deoplete#enable_refresh_always = 1$/;"	v
+g:deoplete#enable_smart_case	nvim/pluginConfig/deoplete.vim	/^    let g:deoplete#enable_smart_case = 1$/;"	v
+g:deoplete#max_abbr_width	nvim/pluginConfig/deoplete.vim	/^    let g:deoplete#max_abbr_width = 0$/;"	v
+g:deoplete#max_menu_width	nvim/pluginConfig/deoplete.vim	/^    let g:deoplete#max_menu_width = 0$/;"	v
+g:deoplete#omni#input_patterns	nvim/pluginConfig/deoplete.vim	/^    let g:deoplete#omni#input_patterns = get(g:,'deoplete#omni#input_patterns',{})$/;"	v
+g:deoplete#omni#input_patterns	nvim/pluginConfig/deoplete.vim	/^  let g:deoplete#omni#input_patterns = {}$/;"	v
+g:indentguides_tabchar	vim/pluginConfig.vim	/^let g:indentguides_tabchar = '|'$/;"	v
+g:jsx_ext_required	vim/pluginConfig.vim	/^let g:jsx_ext_required = 1$/;"	v
+g:jsx_pragma_required	vim/pluginConfig.vim	/^let g:jsx_pragma_required = 1$/;"	v
+g:neomake_error_sign	nvim/pluginConfig/neomake.vim	/^let g:neomake_error_sign = {$/;"	v
+g:neomake_javascript_enabled_makers	nvim/pluginConfig/neomake.vim	/^let g:neomake_javascript_enabled_makers = ['eslint']$/;"	v
+g:neomake_warning_sign	nvim/pluginConfig/neomake.vim	/^let g:neomake_warning_sign = {$/;"	v
+g:rbpt_colorpairs	vim/pluginConfig.vim	/^let g:rbpt_colorpairs = [$/;"	v
+g:rbpt_loadcmd_toggle	vim/pluginConfig.vim	/^	let g:rbpt_loadcmd_toggle = 0$/;"	v
+g:rbpt_max	vim/pluginConfig.vim	/^		let g:rbpt_max = 16$/;"	v
+g:solarized_termcolors	vim/pluginConfig.vim	/^let g:solarized_termcolors=256$/;"	v
+g:syntastic_always_populate_loc_list	vim/pluginConfig.vim	/^let g:syntastic_always_populate_loc_list = 1$/;"	v
+g:syntastic_auto_loc_list	vim/pluginConfig.vim	/^let g:syntastic_auto_loc_list = 1$/;"	v
+g:syntastic_check_on_open	vim/pluginConfig.vim	/^let g:syntastic_check_on_open = 1$/;"	v
+g:syntastic_check_on_wq	vim/pluginConfig.vim	/^let g:syntastic_check_on_wq = 0$/;"	v
+g:tern#arguments	nvim/pluginConfig/tern.vim	/^    let g:tern#arguments = ["--persistent"]$/;"	v
+g:tern#command	nvim/pluginConfig/tern.vim	/^    let g:tern#command = ["tern"]$/;"	v
+g:tern_request_timeout	nvim/pluginConfig/tern.vim	/^    let g:tern_request_timeout = 1$/;"	v
+g:tern_request_timeout	nvim/pluginConfig/tern.vim	/^    let g:tern_request_timeout = 6000$/;"	v
+g:tern_show_argument_hints	nvim/pluginConfig/tern.vim	/^  let g:tern_show_argument_hints = 'on_hold'$/;"	v
+g:tern_show_signature_in_pum	nvim/pluginConfig/tern.vim	/^  let g:tern_show_signature_in_pum = 1$/;"	v
+g:ycm_add_preview_to_completeopt	vim/pluginConfig.vim	/^let g:ycm_add_preview_to_completeopt = 1$/;"	v
+numbertoggle	vim/vimconfig.vim	/^augroup numbertoggle$/;"	a
+omnifuncs	nvim/pluginConfig/tern.vim	/^augroup omnifuncs$/;"	a

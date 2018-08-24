@@ -15,6 +15,20 @@ export LANGUAGE=en_US.UTF-8
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="agnoster"
 ZSH_THEME="powerlevel9k/powerlevel9k"
+# Customise the Powerlevel9k prompts
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  custom_medium custom_freecodecamp dir vcs newline status
+)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+# Add the custom Medium M icon prompt segment
+POWERLEVEL9K_CUSTOM_MEDIUM="echo -n '\uF859'"
+POWERLEVEL9K_CUSTOM_MEDIUM_FOREGROUND="black"
+POWERLEVEL9K_CUSTOM_MEDIUM_BACKGROUND="white"
+# Add the custom freeCodeCamp prompt segment
+POWERLEVEL9K_CUSTOM_FREECODECAMP="echo -n ’\uE242' freeCodeCamp"
+POWERLEVEL9K_CUSTOM_FREECODECAMP_FOREGROUND="white"
+POWERLEVEL9K_CUSTOM_FREECODECAMP_BACKGROUND="cyan"
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
