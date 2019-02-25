@@ -9,3 +9,6 @@ set listchars=eol:¬
 set guicursor=
 autocmd OptionSet guicursor noautocmd set guicursor=
 set hlsearch
+
+" tabs config
+:so ~/dotfiles/nvim/tabs.vim
